@@ -166,3 +166,24 @@ body{
     position: relative;
     top: 33%;
 }
+
+@media (max-width: 800px){
+    #welcome-section{
+        height: 40vh;
+    }
+
+    #projects{
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+    }
+
+    #contact{
+        width: 85%;
+    }
+
+    .project-tile{
+        margin-top:10px;
+        
+    }
+}
