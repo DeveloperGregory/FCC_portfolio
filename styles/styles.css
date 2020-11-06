@@ -10,6 +10,14 @@ body{
     margin: 0px;
 }
 
+.icon-shown{
+    font-size: 40pt;    
+}
+
+.icon-not-shown{
+    font-size: large;
+}
+
 .project-tile{
     background-color: var(--tile-color);
     border-radius: 20px;
@@ -48,7 +56,7 @@ body{
     background: var(--tile-color);
     border-radius: 5px;
     display: flex;
-    font-size: x-large;
+    font-size: 40pt;
     margin: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -164,7 +172,7 @@ body{
     color: #70939D;
     font-size: 22pt;
     position: relative;
-    top: 33%;
+    top: 38%;
 }
 
 @media (max-width: 800px){

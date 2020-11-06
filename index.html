@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/dc00c8a55b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
     <title>Greg Seiler's Portfolio</title>
@@ -17,8 +22,8 @@
         
     </nav>
     <section id='welcome-section'>
-        <h1>Greg Seiler</h1>
-        <h3>Web Developer</h3>
+        <h1 id='my-name'>Greg Seiler</h1>
+        <h3 id='my-title'>Web Developer</h3>
     </section>
     <section id='projects'>
         <div id='projects-title' class='proj-title'>Here Are Some Samples of Previous Projects</div>
@@ -46,10 +51,11 @@
         </p>
     </section>
     <section id='contact'>
-        <div id='profile-link'><a href="https://www.freecodecamp.org/fcc1efbc055-4ab5-45c4-add9-907d1865cf6e" target='_blank'><img src="https://design-style-guide.freecodecamp.org/downloads/fcc_primary_small.png" alt="Free Code Camp Logo"></a></div>
-        <div><a href="https://twitter.com/developer_greg" class="twitter-follow-button" data-show-count="false">Follow @developer_greg</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-        <div><a href="https://github.com/DeveloperGregory" target='_blank'><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github Logo and link to Github Account"></a></div>
-        <div><a href=""></a><img src="https://www.pngkit.com/png/full/381-3818494_antu-mail-mark-read-icon-email-address.png" alt="email logo and email address link"></div>
+        <div id='profile-link' class='icon-shown'><a href="https://www.freecodecamp.org/fcc1efbc055-4ab5-45c4-add9-907d1865cf6e" target='_blank'><i class="fab fa-free-code-camp"></i> </a></div>
+        <div><a href="https://twitter.com/developer_greg" target='_blank'><i class="fab fa-twitter"></i></a></div>
+        <div><a href="https://github.com/DeveloperGregory" target='_blank'><i class="fab fa-github"></i></a></div>
+        <div><a href=""><i class="fas fa-at"></i></a></div>
     </section>
+    <script src="script/script.js"></script>
 </body>
 </html>
