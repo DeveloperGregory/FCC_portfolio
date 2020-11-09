@@ -11,11 +11,18 @@ body{
 }
 
 .icon-shown{
-    font-size: 40pt;    
+    border-style : solid;
+    font-size: 40pt;
+    height: 80px;
+    width: 120px;    
 }
 
 .icon-not-shown{
+    border-style : solid;
     font-size: large;
+    height: 80px;
+    text-align: center;
+    width: 120px; 
 }
 
 .project-tile{
