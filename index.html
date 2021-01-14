@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/dc00c8a55b.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greg Seiler's Portfolio</title>
 </head>
 <body>
@@ -17,6 +16,7 @@
         <ul id='nav-list'>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#projects">PROJECTS</a></li>
+            <li><a href=''>RESUME</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
         
@@ -27,10 +27,11 @@
     </section>
     <section id='projects'>
         <div id='projects-title' class='proj-title'>Here Are Some Samples of Previous Projects</div>
+        
         <div class='project-tile' id='project-1'>
-            <a href="https://codepen.io/developergregory/full/ExyYvXd" target='_blank'><img src="/images/donut.png" alt="Donut Survey Pic"></a>
+            <a href="donut-survey/indexver2.html" target='_blank'><img src="/images/donut.png" alt="Donut Survey Pic w/link to page"></a>
             <h3>Donut Survey Form</h3>
-            <a href="https://codepen.io/developergregory/full/ExyYvXd" target='_blank'>on CodePen</a>
+            <a href="donut-survey/indexver2.html" target='_blank'>See the Mock Site</a>
         </div>
         <div class='project-tile' id='project-2'>
             <a href="https://codepen.io/developergregory/full/MWydNGR" target='_blank'><img src="/images/shigeru.png" alt="Shigeru Miyamoto Tribute Page Pic and Link"></a>
@@ -45,16 +46,26 @@
  
     </section>
     <section id='about'>
-        <p>
+        <h3 class='no-margin'>Coding Skills</h3>
+        <p class='bottom-margin'>
+            HTML 5, CSS 3, JavaScript (React and Redux), Python, I am familar with C++, C#, and Visual Basic 6.0.
+        </p>
+        <h3 class='no-margin'>Soft Skills</h3>
+        <p class= 'bottom-margin'>
+            I have spent the last 18 years working as an office manager at a commercial and residential real estate leasing company.  My duties also 
+            included working with our other company which was coin operated amusement devices.  
+        </p>
+        <h3 class='no-margin'>About Me</h3>
+        <p class= 'bottom-margin'>
             From the first time I saw Mario jumping around on the screen I wanted to be a computer programmer. I got an associate's degree 
-            in 2002 from Ivy Tech but never got a job in the programming field. Then in late 2019 I dove back into programming and I am ready to start my dream career.
+            in 2002 from Ivy Tech but never got a job in the programming field. Got married and had kids. Then in late 2019 I dove back into programming and I am ready to start my dream career.  
         </p>
     </section>
     <section id='contact'>
-        <div id='profile-link' class='icon-shown reach-me'><a href="https://www.freecodecamp.org/fcc1efbc055-4ab5-45c4-add9-907d1865cf6e" target='_blank'><i class="fab fa-free-code-camp"></i> </a></div>
-        <div id='twitter-link' class='icon-shown reach-me'><a href="https://twitter.com/developer_greg" target='_blank'><i class="fab fa-twitter"></i></a></div>
-        <div id='git-link' class='icon-shown reach-me'><a href="https://github.com/DeveloperGregory" target='_blank'><i class="fab fa-github"></i></a></div>
-        <div id='email-link' class='icon-shown reach-me'><a href=""><i class="fas fa-at"></i></a></div>
+        <div id='profile-link' class='icon-shown reach-me'><a href="https://www.freecodecamp.org/fcc1efbc055-4ab5-45c4-add9-907d1865cf6e" target='_blank'><i class="fab fa-free-code-camp reach-me"></i> </a></div>
+        <div id='twitter-link' class='icon-shown reach-me'><a href="https://twitter.com/developer_greg" target='_blank'><i class="fab fa-twitter reach-me"></i></a></div>
+        <div id='git-link' class='icon-shown reach-me'><a href="https://github.com/DeveloperGregory" target='_blank'><i class="fab fa-github reach-me"></i></a></div>
+        <div id='email-link' class='icon-shown reach-me'><a href=""><i class="fas fa-at reach-me"></i></a></div>
     </section>
     <script src="script/script.js"></script>
 </body>

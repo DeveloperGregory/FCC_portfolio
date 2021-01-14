@@ -5,24 +5,35 @@
     --tile-color: #2B5D6C;
 }
 body{
-    background-color: var(--bg-color);
+    
     font-family: 'DM Sans', sans-serif;
     margin: 0px;
 }
 
 .icon-shown{
-    border-style : solid;
+    color: var(--text-color);
     font-size: 40pt;
     height: 80px;
+    text-decoration: none;
     width: 120px;    
 }
 
 .icon-not-shown{
-    border-style : solid;
+    color: var(--text-color);
     font-size: large;
     height: 80px;
     text-align: center;
+    text-decoration: none;
     width: 120px; 
+}
+
+.no-margin{
+    margin: 0px;
+}
+
+.bottom-margin{
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .project-tile{
@@ -33,7 +44,7 @@ body{
     margin: 10px;
     margin-top:-140px;
     text-align: center;
-    width: 460px;
+    width: 410px;
 }
 
 .project-tile img{
@@ -42,11 +53,16 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 3px;
-    width: auto;
+    width: 95%;
 }
 
 .project-tile h3, a{
     margin: 0px;
+}
+
+.reach-me{
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 
@@ -54,7 +70,6 @@ body{
 #about{
     background-color: var(--tile-color);
     font-size: large;
-    
     padding: 20px;
 }
 
@@ -62,11 +77,13 @@ body{
     justify-content: space-around;
     background: var(--tile-color);
     border-radius: 5px;
+    color: var(--text-color);
     display: flex;
     font-size: 40pt;
     margin: 20px;
     margin-left: auto;
     margin-right: auto;
+    text-decoration: none;
     width: 40%;
 }
 
@@ -74,12 +91,6 @@ body{
     margin: 10px;
 }
 
-
-
-#contact img{
-    height: 50px;
-    width: auto;
-}
 
 #navbar{
     background-color: var(--bg-color);
@@ -151,6 +162,7 @@ body{
 
 #project-1{
     grid-area: proj1;
+    margin-left: 20px;
 }
 
 #project-2{
@@ -163,9 +175,10 @@ body{
 
 #welcome-section{
     background-color:#184755;
-    height: 100vh;
+    height: 90vh;
     position: relative;
     text-align: center;
+    top: -10px;
         
 }
 
@@ -179,7 +192,7 @@ body{
     color: #70939D;
     font-size: 22pt;
     position: relative;
-    top: 38%;
+    top: 33%;
 }
 
 @media (max-width: 800px){
@@ -199,6 +212,8 @@ body{
 
     .project-tile{
         margin-top:10px;
+        margin-left: auto;
+        margin-right: auto;
         
     }
 }
