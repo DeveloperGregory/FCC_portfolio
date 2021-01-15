@@ -1,11 +1,13 @@
 :root{
-    --bg-color: #70939D;
-    --wel-section: #184755;
-    --text-color: #062F3A;
-    --tile-color: #2B5D6C;
+    --bg-color: #36AD10;
+    --wel-section: #70DC4E;
+    --text-color: rgb(230, 255, 237);
+    --body-text: #006633;
+    --tile-color: #70DC4E;
+    --proj-bgcolor: rgb(34, 34, 34);
 }
 body{
-    
+    background-color: var(--bg-color);
     font-family: 'DM Sans', sans-serif;
     margin: 0px;
 }
@@ -123,10 +125,10 @@ body{
 }
 
 #nav-list a{
-    border-bottom-color: #062F3A;
+    border-bottom-color: var(--text-color);
     border-radius: 4px;
-    border-bottom-style: groove;
-    color: #062F3A;
+    border-bottom-style: solid;
+    color: var(--text-color);
     font-size: large;
     font-weight: bold;
     margin-right: 15px;
@@ -135,17 +137,19 @@ body{
 }
 
 #nav-list a:hover{
-    background-color: #062F3A ;
-    color:  #70939D;
+    background-color: var(--text-color) ;
+    color:  var(--wel-section);
 }
 
 #projects{
+    background-color: var(--proj-bgcolor);
     display: grid;
     grid-template-areas:
     "header header header"
     "proj1 proj2 proj3"
     "proj4 proj5 proj6";
     height: 600px;
+    margin-top: -30px;
     width: 100%;
 }
 
@@ -155,6 +159,7 @@ body{
     font-size: x-large;
     height: 50px;
     margin: 0px;
+    margin-top: 10px;
     text-align: center;
     font-weight: bold;
     width: 100%;
@@ -174,31 +179,51 @@ body{
 }
 
 #welcome-section{
-    background-color:#184755;
+    background-image: url('/images/lines.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 90vh;
     position: relative;
     text-align: center;
-    top: -10px;
+    top: -30px;
+    
         
 }
 
 #welcome-section h1{
-    color: #70939D;
+    color: var(--text-color);
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
-    font-size: 40pt;
+    font-size: 60pt;
+    text-shadow: 4px 4px #414141;
     top: 40%;
+    width: auto;;
 }
 #welcome-section h3{
-    color: #70939D;
-    font-size: 22pt;
+    color: var(--text-color);
+    font-size: 26pt;
     position: relative;
-    top: 33%;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 4px 4px #414141;
+    width: 300px;
 }
 
 @media (max-width: 800px){
     #welcome-section{
         height: 40vh;
     }
+
+    #welcome-section h1{
+        font-size: 40pt;
+    }
+
+    #welcome-section h3{
+        font-size: 20pt;
+    }
+
 
     #projects{
         display: flex;
