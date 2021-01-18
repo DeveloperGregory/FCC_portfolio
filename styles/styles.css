@@ -1,10 +1,11 @@
 :root{
-    --bg-color: #36AD10;
+    --bg-color:  rgb(34, 34, 34);
     --wel-section: #70DC4E;
     --text-color: rgb(230, 255, 237);
     --body-text: #006633;
     --tile-color: #70DC4E;
-    --proj-bgcolor: rgb(34, 34, 34);
+    
+    
 }
 body{
     background-color: var(--bg-color);
@@ -45,8 +46,10 @@ body{
     height: 250px;
     margin: 10px;
     margin-top:-140px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    width: 410px;
+    width: 27vw;
 }
 
 .project-tile img{
@@ -64,6 +67,8 @@ body{
 
 .reach-me{
     color: var(--text-color);
+    margin: 0px;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -71,22 +76,29 @@ body{
 
 #about{
     background-color: var(--tile-color);
+    border-radius: 15px;
     font-size: large;
+    margin: 20px;
     padding: 20px;
 }
 
 #contact{
-    justify-content: space-around;
-    background: var(--tile-color);
-    border-radius: 5px;
+    border-radius: 10px;
     color: var(--text-color);
     display: flex;
+    align-items: center;
     font-size: 40pt;
     margin: 20px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0px;
     text-decoration: none;
     width: 40%;
+}
+
+#contact-container{
+    
+    margin: 0px;
 }
 
 #contact div{
@@ -142,7 +154,6 @@ body{
 }
 
 #projects{
-    background-color: var(--proj-bgcolor);
     display: grid;
     grid-template-areas:
     "header header header"
@@ -150,6 +161,7 @@ body{
     "proj4 proj5 proj6";
     height: 600px;
     margin-top: -30px;
+    
     width: 100%;
 }
 
@@ -167,7 +179,7 @@ body{
 
 #project-1{
     grid-area: proj1;
-    margin-left: 20px;
+   
 }
 
 #project-2{
@@ -213,7 +225,7 @@ body{
 
 @media (max-width: 800px){
     #welcome-section{
-        height: 40vh;
+        height: 70vh;
     }
 
     #welcome-section h1{
@@ -239,6 +251,7 @@ body{
         margin-top:10px;
         margin-left: auto;
         margin-right: auto;
+        width: 80vw;
         
     }
 }
